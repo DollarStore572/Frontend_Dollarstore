@@ -6,6 +6,8 @@ import './App.css';
 import Encabezado from "./components/encabezado/Encabezado";
 import Clientes from "./views/Clientes";
 import Productos from "./views/Productos";
+//import Categorias from "./views/Categorias";
+import Usuarios from "./views/Usuarios";
 
 const App = () => {
   return (
@@ -13,11 +15,12 @@ const App = () => {
       <main className="margen-superior-main">
       <Encabezado />
        <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/inicio" element={<Inicio />} />
-        <Route path="/clientes" element={<Clientes />} />
-        <Route path="/productos" element={<Productos />} />
-        </Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/inicio" element={<Inicio />} />
+          <Route path="/clientes" element={<Clientes />} />
+          <Route path="/productos" element={<Productos />} />
+          <Route path="/usuarios" element={<Usuarios />} />
+      </Routes>
       </main>
     </Router>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col, Form, Button, Card, Alert } from "react-bootstrap";
-import "../../app.css";
+import "../../App.css";
 
 const LoginForm = ({ email, password, error, setEmail, setPassword, manejarEnvio }) => {
   return (
