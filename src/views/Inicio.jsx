@@ -24,7 +24,7 @@ const Inicio = () => {
   return (
     <Container>
       <h1>¡Bienvenido, {nombreUsuario}!</h1>
-      <p>Estás en la página de inicio.</p>
+      <p>Estás en la página de inicio de Dollar Store.</p>
       <button onClick={cerrarSesion}>Cerrar Sesión</button>
     </Container>
   );

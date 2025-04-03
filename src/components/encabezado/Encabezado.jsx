@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
-import logo from "/vite.svg"; // Importación del logo de la ferretería
+import logo from "/images.png"; // Importación del logo de la ferretería
 import "bootstrap-icons/font/bootstrap-icons.css"; // Importación de íconos de Bootstrap
 import "../../App.css"; // Estilos personalizados de la aplicación
 
@@ -105,6 +105,15 @@ const Encabezado = () => {
                 <strong>Clientes</strong>
               </Nav.Link>
 
+              {/* Opción de navegación a Categorías */}
+                <Nav.Link
+                onClick={() => navegarA("/categorias")}
+                className={estaColapsado ? "text-black" : "text-white"}
+              >
+                {estaColapsado ? <i className="bi-house-door-fill me-2"></i> : null}
+                <strong>Categorías</strong>
+              </Nav.Link>
+
                  {/* Opción de navegación a Productos */}
                  <Nav.Link
                 onClick={() => navegarA("/productos")}
@@ -112,6 +121,15 @@ const Encabezado = () => {
               >
                 {estaColapsado ? <i className="bi-house-door-fill me-2"></i> : null}
                 <strong>Productos</strong>
+              </Nav.Link>
+
+              {/* Opción de navegación a Ventas */}
+              <Nav.Link
+                onClick={() => navegarA("/ventas")}
+                className={estaColapsado ? "text-black" : "text-white"}
+              >
+                {estaColapsado ? <i className="bi-house-door-fill me-2"></i> : null}
+                <strong>Ventas</strong>
               </Nav.Link>
 
               {/* Lógica condicional para mostrar Cerrar Sesión o Iniciar Sesión */}

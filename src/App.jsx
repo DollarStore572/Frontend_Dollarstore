@@ -6,8 +6,9 @@ import './App.css';
 import Encabezado from "./components/encabezado/Encabezado";
 import Clientes from "./views/Clientes";
 import Productos from "./views/Productos";
-//import Categorias from "./views/Categorias";
 import Usuarios from "./views/Usuarios";
+import Ventas from "./views/Ventas";
+import Categorias from "./views/Categorias";
 
 const App = () => {
   return (
@@ -20,6 +21,8 @@ const App = () => {
           <Route path="/clientes" element={<Clientes />} />
           <Route path="/productos" element={<Productos />} />
           <Route path="/usuarios" element={<Usuarios />} />
+          <Route path="/ventas" element={<Ventas />} />
+          <Route path="/categorias" element={<Categorias />} />
       </Routes>
       </main>
     </Router>
